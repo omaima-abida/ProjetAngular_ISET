@@ -1,0 +1,100 @@
+{
+  "produits": [
+    {
+      "id": 15,
+      "code": "y922",
+      "designation": "salon marron",
+      "prix": 8000
+    },
+    {
+      "code": "15",
+      "designation": "fg15",
+      "prix": "125",
+      "id": 16
+    },
+    {
+      "code": "df12",
+      "designation": "dd12",
+      "prix": "6985",
+      "id": 17
+    },
+    {
+      "code": "12",
+      "designation": "ff",
+      "prix": "55",
+      "id": 18
+    },
+    {
+      "id": "12",
+      "code": "CD12",
+      "designation": "COMPOIUY12",
+      "prix": "12236"
+    },
+    {
+      "id": "fgf",
+      "code": "f",
+      "designation": "f",
+      "prix": "f"
+    },
+    {
+      "id": "fg",
+      "code": "ff",
+      "designation": "ff",
+      "prix": "ff"
+    },
+    {
+      "id": "125",
+      "code": "125",
+      "designation": "125",
+      "prix": "2"
+    },
+    {
+      "id": "ggggg",
+      "code": "ggggg",
+      "designation": "ggggggggg",
+      "prix": "ggggggg"
+    },
+    {
+      "id": "5896",
+      "code": "555555",
+      "designation": "55555555",
+      "prix": "5555555555"
+    },
+    {
+      "id": "hhhhhhh",
+      "code": "u",
+      "designation": "u",
+      "prix": "u"
+    },
+    {
+      "id": "99",
+      "code": "cd99",
+      "designation": "dd52",
+      "prix": "963"
+    },
+    {
+      "id": "1",
+      "code": "12",
+      "designation": "12",
+      "prix": "100"
+    },
+    {
+      "id": "10",
+      "code": "10",
+      "designation": "10",
+      "prix": "10"
+    },
+    {
+      "id": "5",
+      "code": "5",
+      "designation": "5",
+      "prix": "55"
+    },
+    {
+      "id": "7777",
+      "code": "dd",
+      "designation": "dd",
+      "prix": "dd"
+    }
+  ]
+}

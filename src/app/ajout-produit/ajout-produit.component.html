@@ -1,0 +1,63 @@
+<!-- ajout-produit.component.html -->
+<div class="container">
+  <h1>Ajout Produit</h1>
+  <form #ajoutProduitForm="ngForm" (ngSubmit)="validerFormulaire()">
+    <table>
+      <tr>
+        <td><label for="id">Id:</label></td>
+        <td><input type="text" name="id" id="id" [(ngModel)]="nouveauProduit.id" required /></td>
+      </tr>
+
+      <tr>
+        <td><label for="code">Code:</label></td>
+        <td><input type="text" name="code" id="code" [(ngModel)]="nouveauProduit.code" required /></td>
+      </tr>
+      <tr>
+        <td><label for="designation">Désignation:</label></td>
+        <td><input type="text" name="designation" id="designation" [(ngModel)]="nouveauProduit.designation" required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="prix">Prix:</label></td>
+        <td><input type="text" name="prix" id="prix" [(ngModel)]="nouveauProduit.prix" required /></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <input type="submit" value="Valider" [disabled]="!ajoutProduitForm.form.valid" />
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <!-- Affichage de la liste des produits -->
+  <div>
+    <h2>Liste des Nouveaux Produits</h2>
+    <table border="1" class="table table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Code</th>
+          <th>Désignation</th>
+          <th>Prix</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let produit of listeProduits">
+          <td>{{ produit.id }}</td>
+          <td>{{ produit.code }}</td>
+          <td>{{ produit.designation }}</td>
+          <td>{{ produit.prix }}</td>
+          <td>
+            <button (click)="editerProduit(produit)" class="btn btn-dark">
+              <i class="bi bi-pencil"></i> Editer
+            </button>
+            <button (click)="supprimerProduit(produit)" class="btn btn-danger">
+              <i class="bi bi-trash"></i> Supprimer
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
